@@ -1,24 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jun  9 14:32:48 2018
+Created on Mon Jun 18 21:45:42 2018
 
 @author: NP
 """
+arr = input().strip().split(' ')
+result = arrays(arr)
+print(result)
 
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-
-
-if __name__ == '__main__':
-    n = int(input())
-
-    arr = list(map(int, input().rstrip().split()))
-    
-    print(" ".join(map(str, arr[::-1])))
+def arrays(arr):
+    arr.reverse()
+    return (numpy.array(arr,float))
     
